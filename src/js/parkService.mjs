@@ -180,5 +180,5 @@ const park = {
 };
 
 export function getParkData() {
-  return park;
+  return getParkData;
 }

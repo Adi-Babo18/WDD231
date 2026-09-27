@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(234, 195, 172);
+    margin: 100px;
+}
+
+section {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.recipe {
+    text-align: center;
+    justify-self: flex-start;
+}
+
+.recipe-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.recipe-container img {
+    width: 200px;
+}
+
+
+@media screen and (max-width: 500px){
+    .recipe-container{
+        flex-direction: column;
+    }
+}
