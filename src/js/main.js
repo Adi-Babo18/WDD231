@@ -20,19 +20,21 @@ function setParkInfo(images) {
       image: images[0].url,
       description:
         "See what conditions to expect in the park before leaving on your trip.",
-      link: "#",
+      link: "conditions.html",
     },
     {
       name: "Fees and Passes",
       image: images[1].url,
-      description: "Learn about the fees and passes that are available.",
-      link: "#",
+      description:
+        "Learn about the fees and passes that are available.",
+      link: "fees.html",
     },
     {
       name: "Visitor Centers",
       image: images[2].url,
-      description: "Learn about the visitor centers in the park.",
-      link: "#",
+      description:
+        "Learn about the visitor centers in the park.",
+      link: "visitor_centers.html",
     },
   ];
 

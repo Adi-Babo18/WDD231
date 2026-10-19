@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current Conditions</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/conditions.css" />
+    <script type="module" src="js/conditions.js"></script>
+  </head>
+  <body>
+    <p class="disclaimer">
+      This is not a real NPS website. It is an educational exercise. If you
+      landed here by accident, visit
+      <a href="#">the real park website</a>.
+    </p>
+    <div class="skip-links" aria-label="shortcut links" role="navigation">
+      <ul>
+        <li><a href="#global-nav-toggle">Skip to global NPS navigation</a></li>
+        <li><a href="#local-nav">Skip to this park navigation</a></li>
+        <li><a href="#main">Skip to the main content</a></li>
+        <li><a href="#park-footer">Skip to park information</a></li>
+      </ul>
+    </div>
+    <header>
+      <section class="global-header">
+        <a href="index.html" class="site-title">
+          <span class="logo" role="presentation"></span>
+          <span>National Park Service</span>
+        </a>
+        <div class="global-header__right">
+          <a class="search-icon" href="#park-footer">
+            <svg class="icon" aria-hidden="true">
+              <use href="/images/sprite.symbol.svg#search"></use>
+            </svg>
+            <span class="visually-hidden">Search</span>
+          </a>
+          <button id="global-nav-toggle">
+            <svg class="icon" aria-hidden="true">
+              <use href="/images/sprite.symbol.svg#menu"></use>
+            </svg>
+            <span class="visually-hidden">Open</span>
+            Menu
+          </button>
+        </div>
+      </section>
+      <section id="park-header">
+        <div class="hero-banner">
+          <img src="#" alt="Park landscape" />
+          <div class="hero-banner__content"></div>
+        </div>
+        <nav id="local-nav" class="park-nav">
+          <ul>
+            <li>
+              <a href="conditions.html">
+                <span>Info</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="/images/sprite.symbol.svg#info"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="conditions.html">
+                <span>Alerts</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="/images/sprite.symbol.svg#alert"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Maps</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="/images/sprite.symbol.svg#location"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Calendar</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="/images/sprite.symbol.svg#calendar"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Fees</span>
+                <svg class="icon" aria-hidden="true">
+                  <use href="/images/sprite.symbol.svg#fee-22"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main id="main" class="conditions-page">
+      <h1>Current Conditions</h1>
+      <section class="alerts">
+        <h2>Alerts</h2>
+        <ul></ul>
+      </section>
+      <section class="visitor">
+        <h2>Visitor Services</h2>
+        <details name="current-details">
+          <summary>Visitor Centers</summary>
+          <ul></ul>
+        </details>
+      </section>
+      <section class="activities">
+        <h2>Activities</h2>
+        <details name="current-details">
+          <summary>All Activities</summary>
+          <ul></ul>
+        </details>
+      </section>
+    </main>
+    <footer id="park-footer" class="park-footer"></footer>
+  </body>
+</html>
