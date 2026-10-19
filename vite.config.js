@@ -9,10 +9,12 @@ export default defineConfig({
 
   build: {
     outDir: "../dist",
+
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "src/index.html")
-      }
-    }
-  }
+        main: resolve(__dirname, "src/index.html"),
+        conditions: resolve(__dirname, "src/conditions.html"),
+      },
+    },
+  },
 });
