@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eeeeee;
+  color: #222222;
+}
+header {
+  padding: 1rem;
+  background-color: #222222;
+  color: white;
+  text-align: center;
+}
+main {
+  padding: 2rem;
+  text-align: center;
+}
+button {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2600ff;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #482c83;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: white;
+  color: #222222;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.modal-content label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+  font-weight: bold;
+}
+.modal-content input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.modal.open {
+    display: flex;
+}
+.close-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.8rem;
+  padding: 0;
+  background-color: transparent;
+  color: #222222;
+  font-size: 2rem;
+  line-height: 1;
+}
+.close-button:hover {
+  background-color: transparent;
+  color: #b00020;
+}
