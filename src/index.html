@@ -51,7 +51,13 @@
             </svg>
             <span class="visually-hidden">Search</span>
           </a>
-          <button id="global-nav-toggle">
+          <button 
+            id="global-nav-toggle"
+            class="global-nav_toggle"
+            aria-expanded="false"
+            aria-label="Open Menu"
+          >
+          <div class="global-nav_toggle--closed">
             <svg class="icon" aria-hidden="true">
               <use href="/images/sprite.symbol.svg#menu"></use>
             </svg>
@@ -59,6 +65,22 @@
             Menu
           </button>
         </div>
+        <nav class="global-nav">
+          <h2 class="global-nav_section-heading">Explore this Park</h2>
+          <ul class="global-nav_list">
+            <li>
+              <div class="global-nav_split-button">
+                <a href="#">Plan Your Visit</a>
+                <button class="global-nav_spilt-button_toggle">
+                  <span class="visually-hidden">Toggle submenu for Plan Your Visit</span>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="/images/sprite.symbol.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </section>
       <section id="park-header">
         <div class="hero-banner">

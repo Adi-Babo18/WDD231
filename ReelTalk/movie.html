@@ -9,8 +9,17 @@
   </head>
   <body>
     <header>
-      <h1>Reel Talk</h1>
-      <nav>
+      <div class="brand">
+        <img class="site-logo" src="images/Reel_Talk_Logo.png" alt="Reel Talk logo">
+        <h1>Reel Talk</h1>
+      </div>
+      <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="main-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="visually-hidden">Open menu</span>
+      </button>
+      <nav id="main-nav">
         <a href="index.html">Home</a>
         <a href="index.html#movies">Movies</a>
         <a href="index.html#review-form">Add Review</a>
@@ -18,14 +27,16 @@
     </header>
     <main>
       <section id="movie-information">
+        <p class="small-title">MOVIE DETAILS</p>
         <h2>Movie Details</h2>
         <p id="movie-title"></p>
         <p id="movie-description"></p>
-        <a href="index.html">Return Home</a>
+        <a href="index.html">← Return Home</a>
       </section>
     </main>
     <footer>
-        <p>Reel Talk &copy; 2026</p>
+      <p>Reel Talk &copy; 2026</p>
+      <p>Movies. Opinions. Conversations.</p>
     </footer>
   </body>
 </html>

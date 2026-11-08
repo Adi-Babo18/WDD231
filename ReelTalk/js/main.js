@@ -10,7 +10,10 @@ genre.addEventListener("change", filterMovies);
 function searchMovies() {
   const searchText = search.value.toLowerCase();
   movieCards.forEach((card) => {
-    const movieName = card.querySelector("h3").textContent.toLowerCase();
+    const movieName = card
+      .querySelector("h3")
+      .textContent.toLowerCase();
+      
     if (movieName.includes(searchText)) {
       card.style.display = "block";
     } else {
@@ -52,5 +55,11 @@ reviewForm.addEventListener("submit", function (event) {
 
   saveReview(review);
   message.textContent = "Your review was saved!";
+  message.classList.add("show-message");
   reviewForm.reset();
+});
+
+movieCards.forEach((card, index) => {
+  card.style.animationDelay = `${index * 0.2}s`;
+  card.classList.add("movie-card-animation");
 });
