@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>[Park Name]</title>
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
@@ -16,26 +16,10 @@
     </p>
     <div class="skip-links" aria-label="shortcut links" role="navigation">
       <ul>
-        <li>
-          <a href="#global-nav-toggle">
-            Skip to global NPS navigation
-          </a>
-        </li>
-        <li>
-          <a href="#local-nav">
-            Skip to this park navigation
-          </a>
-        </li>
-        <li>
-          <a href="#main">
-            Skip to the main content
-          </a>
-        </li>
-        <li>
-          <a href="#park-footer">
-            Skip to this park information section
-          </a>
-        </li>
+        <li><a href="#global-nav-toggle">Skip to global NPS navigation</a></li>
+        <li><a href="#local-nav">Skip to this park navigation</a></li>
+        <li><a href="#main">Skip to the main content</a></li>
+        <li><a href="#park-footer">Skip to this park information section</a></li>
       </ul>
     </div>
     <header>
@@ -51,33 +35,185 @@
             </svg>
             <span class="visually-hidden">Search</span>
           </a>
-          <button 
+          <button
             id="global-nav-toggle"
-            class="global-nav_toggle"
+            class="global-nav__toggle"
             aria-expanded="false"
-            aria-label="Open Menu"
-          >
-          <div class="global-nav_toggle--closed">
-            <svg class="icon" aria-hidden="true">
-              <use href="/images/sprite.symbol.svg#menu"></use>
-            </svg>
-            <span class="visually-hidden">Open</span>
-            Menu
+            aria-label="Open Menu">
+            <div class="global-nav__toggle--closed">
+              <svg class="icon" aria-hidden="true">
+                <use href="/images/sprite.symbol.svg#menu"></use>
+              </svg>
+              <span class="visually-hidden">Open</span>
+              Menu
+            </div>
+            <div class="global-nav__toggle--open">
+              <svg class="icon" aria-hidden="true">
+                <use href="/images/sprite.symbol.svg#close"></use>
+              </svg>
+              Close
+            </div>
           </button>
         </div>
         <nav class="global-nav">
-          <h2 class="global-nav_section-heading">Explore this Park</h2>
-          <ul class="global-nav_list">
+          <h2 class="global-nav__section-heading section-heading--green">
+            Explore this Park
+          </h2>
+          <ul class="global-nav__list">
             <li>
-              <div class="global-nav_split-button">
+              <div class="global-nav__split-button">
                 <a href="#">Plan Your Visit</a>
-                <button class="global-nav_spilt-button_toggle">
-                  <span class="visually-hidden">Toggle submenu for Plan Your Visit</span>
+                <button
+                  class="global-nav__split-button__toggle"
+                  aria-expanded="false"
+                  aria-label="Open Plan Your Visit submenu">
+                  <span class="visually-hidden">
+                    Toggle submenu for Plan Your Visit
+                  </span>
                   <svg class="icon" aria-hidden="true">
                     <use href="/images/sprite.symbol.svg#arrow"></use>
                   </svg>
                 </button>
               </div>
+              <ul class="global-nav__submenu">
+                <li>
+                  <a href="#">Current Conditions</a>
+                </li>
+                <li>
+                  <a href="#">Visitor Centers</a>
+                </li>
+                <li>
+                  <a href="#">Maps</a>
+                </li>
+                <li>
+                  <a href="#">Fees and Passes</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h2 class="global-nav__section-heading section-heading--blue">
+            Explore the National Park Service
+          </h2>
+          <ul class="global-nav__list">
+            <li>
+              <div class="global-nav__split-button">
+                <a href="#">Plan Your Visit</a>
+                <button
+                  class="global-nav__split-button__toggle"
+                  aria-expanded="false"
+                  aria-label="Open Plan Your Visit submenu">
+                  <span class="visually-hidden">
+                    Toggle submenu for Plan Your Visit
+                  </span>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="/images/sprite.symbol.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <ul class="global-nav__submenu">
+                <li>
+                  <a href="#">Find a Park</a>
+                </li>
+                <li>
+                  <a href="#">Events</a>
+                </li>
+                <li>
+                  <a href="#">Passes</a>
+                </li>
+                <li>
+                  <a href="#">Trip Ideas</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="global-nav__split-button">
+                <a href="#">Learn and Explore</a>
+                <button
+                  class="global-nav__split-button__toggle"
+                  aria-expanded="false"
+                  aria-label="Open Learn and Explore submenu">
+                  <span class="visually-hidden">
+                    Toggle submenu for Learn and Explore
+                  </span>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="/images/sprite.symbol.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <ul class="global-nav__submenu">
+                <li>
+                  <a href="#">History and Culture</a>
+                </li>
+                <li>
+                  <a href="#">Nature</a>
+                </li>
+                <li>
+                  <a href="#">Education</a>
+                </li>
+                <li>
+                  <a href="#">Stories</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="global-nav__split-button">
+                <a href="#">Get Involved</a>
+                <button
+                  class="global-nav__split-button__toggle"
+                  aria-expanded="false"
+                  aria-label="Open Get Involved submenu">
+                  <span class="visually-hidden">
+                    Toggle submenu for Get Involved
+                  </span>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="/images/sprite.symbol.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <ul class="global-nav__submenu">
+                <li>
+                  <a href="#">Volunteer</a>
+                </li>
+                <li>
+                  <a href="#">Donate</a>
+                </li>
+                <li>
+                  <a href="#">Work With Us</a>
+                </li>
+                <li>
+                  <a href="#">Support the Parks</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="global-nav__split-button">
+                <a href="#">Park Tools</a>
+                <button
+                  class="global-nav__split-button__toggle"
+                  aria-expanded="false"
+                  aria-label="Open Park Tools submenu">
+                  <span class="visually-hidden">
+                    Toggle submenu for Park Tools
+                  </span>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="/images/sprite.symbol.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <ul class="global-nav__submenu">
+                <li>
+                  <a href="#">Maps</a>
+                </li>
+                <li>
+                  <a href="#">Alerts</a>
+                </li>
+                <li>
+                  <a href="#">Trip Planner</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>

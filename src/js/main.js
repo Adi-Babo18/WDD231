@@ -27,14 +27,14 @@ function setParkInfo(images) {
       image: images[1].url,
       description:
         "Learn about the fees and passes that are available.",
-      link: "fees.html",
+      link: "#",
     },
     {
       name: "Visitor Centers",
       image: images[2].url,
       description:
         "Learn about the visitor centers in the park.",
-      link: "visitor_centers.html",
+      link: "#",
     },
   ];
 

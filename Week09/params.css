@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  background-color: #eeeeee;
+  color: #222222;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+img {
+  max-width: 100%;
+}
+header {
+  padding: 1rem;
+  background-color: #222222;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  text-decoration: none;
+}
+.logo h1 {
+  margin: 0;
+}
+.logoImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50% 25%;
+  background-color: coral;
+}
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+h2 {
+  text-align: center;
+}
+.product-list {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+}
+.product-list li {
+  margin: 1rem 0;
+}
+.product-list a {
+  display: block;
+  padding: 1rem;
+  background-color: white;
+  border: 2px solid coral;
+  border-radius: 1px;
+  color: #222222;
+  text-decoration: none;
+}
+.product-list a:hover {
+  background-color: coral;
+  color: white;
+}
+#product-details {
+  display: flex;
+  justify-content: center;
+}
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #bbbbbb;
+}
+.product img {
+  width: 100%;
+}
+.product-info {
+  align-self: center;
+}
+.product-info h3 {
+  font-size: 2rem;
+}
+.product-info p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .product {
+    grid-template-columns: 1fr;
+  }
+  .product-info h3 {
+    font-size: 1.5rem;
+  }
+}
