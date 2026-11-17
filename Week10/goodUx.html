@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An example of a clear, understanding, accessible, and responsive website for my WDD231 course."/>
+    <title>A Better Website Experience</title>
+    <link rel="stylesheet" href="goodUx.css"/>
+</head>
+<body>
+    <main class="container">
+        <header class="site-header">
+            <p class="eyebrow">User Experience Pracitce</p>
+            <h1>A Better Website Experience</h1>
+            <p class="intro">
+                This page demonstrates how thoughtful and careful design can make a website easier to read, understand, navigate, and use.
+            </p>
+        </header>
+        <section class="content-section">
+            <h2>What Makes a Website Better?</h2>
+            <p>A good website uses clear content, readable text, appropriate colors, useful spacing, and a layout that works on different screen sizes. These design choices help visitors find information and complete tasks that is needed from the website more easily.</p>
+            <img class="hero-image" src="images/apple_pie.jpg" alt="A clean and organized website displayed on a desktop screen." width="700" height="480" fetchpriority="high"/>
+        </section>
+        <section class="content-section">
+            <h2>Helpful User Experience Principles</h2>
+            <ul class="principles-list">
+                <li>Keep information organized and easy to find.</li>
+                <li>Use readable fonts and comfortable spacing.</li>
+                <li>Choose colors with a strong contrast.</li>
+                <li>Design pages that work on phones and desktops.</li>
+                <li>Gives users clear instructions and feedback on how to navigate the website.</li>
+                <li>Make the website accessible to all visitors</li>
+            </ul>
+            <nav class="pagination" aria-label="Pagination">
+                <a class="pagination-link active" href="#" aria-current="page">1</a>
+                <a class="pagination-link" href="#">2</a>
+                <a class="pagination-link" href="#">3</a>
+                <a class="pagination-link" href="#">Next</a>
+            </nav>
+        </section>
+        <section class="content-section">
+            <h2>Stay Connected</h2>
+            <p>Enter your name below if you would like to recieve more information about improving website usability.</p>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Your name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name" required/>
+                </div>
+                <button type="submit">Send Information</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
